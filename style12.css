@@ -1,0 +1,85 @@
+
+header
+{
+	background-color:#CFDFE6;
+	background-repeat:no-repeat;
+	height: 100vh;
+	background-size: 100% 100%;
+	background-position: centre;
+}
+
+.body
+{ background-color:#CFDFE6;
+}
+
+.nav  
+{	
+	background: rgba(0,0,100,.5);
+	height: 110px;
+}
+.menu
+{
+	float: right;
+	list-style: none;
+	margin: 20px;
+}
+
+.menu li
+{
+	display: inline-block;
+	margin: 10px 5px;
+}
+
+.menu li a
+{
+	font-size: 40px;
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 10px;
+	font-family: san-seriff;
+	letter-spacing: 2px;
+	
+}
+.menu li a:hover
+{
+	background-color:#CFDFE6;
+	border-bottom: 1px solid coral;
+	transition: .4s;
+
+}
+
+.msg
+{	
+	position: relative;
+	text-align: center;
+	font-family: sans-seriff;
+	color: #fff;
+	top: 200px;
+}
+.msg h1
+{
+	font-size: 52px;
+	margin: 25px;
+	color: #FFF;
+}
+.btn
+{
+	font-size: 40px;
+	color: #FFF;
+	letter-spacing: 2px;
+	padding: 7px 28px;
+	margin:20px;
+	text-decoration:none;
+	background: rgba(0,0,100,.5);
+}
+.btn1:hover
+{
+	background-color:#CFDFE6;
+	color: #fff;
+}
+.btn2:hover
+{
+	background-color:#CFDFE6;
+	color: #fff;
+}
+
