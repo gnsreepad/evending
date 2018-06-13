@@ -1,5 +1,6 @@
 <?php
 require_once("config.php");
+require("select.php");
 require('razorpay-php/Razorpay.php');
 session_start();
 ?>
@@ -45,7 +46,7 @@ session_start();
 				<!-- Single product -->
 				<div class="product-grid__product-wrapper">
 					<div class="product-grid__product">
-						<span class="product-grid__title">FANTA</span>
+						<span class="product-grid__title"><?php echo $value1; ?></span>
 						<div class="product-grid__extend-wrapper">
 							<div class="product-grid__extend">
 								<span class="product-grid__btn product-grid__add-to-cart">
@@ -59,7 +60,7 @@ session_start();
 				<!-- end Single product -->
 				<div class="product-grid__product-wrapper">
 					<div class="product-grid__product">
-						<span class="product-grid__title">SPRITE</span>
+						<span class="product-grid__title"><?php echo $value2; ?></span>
 						<div class="product-grid__extend-wrapper">
 							<div class="product-grid__extend">
 								<span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i><?php include("pay2.php") ?></span>
@@ -70,7 +71,7 @@ session_start();
 				</div>
 				<div class="product-grid__product-wrapper">
 					<div class="product-grid__product">
-						<span class="product-grid__title">7UP</span>
+						<span class="product-grid__title"><?php echo $value3; ?></span>
 						<div class="product-grid__extend-wrapper">
 							<div class="product-grid__extend">
 								<span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i><?php include("pay.php") ?></span>
@@ -84,7 +85,7 @@ session_start();
 
 <div class="product-grid__product-wrapper">
 					<div class="product-grid__product">
-						<span class="product-grid__title">LAYS</span>
+						<span class="product-grid__title"><?php echo $value4; ?></span>
 						<div class="product-grid__extend-wrapper">
 							<div class="product-grid__extend">
 								<span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i><?php include("pay.php") ?></span>
