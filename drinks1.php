@@ -1,5 +1,7 @@
 <?php
 require_once("config.php");
+require('razorpay-php/Razorpay.php');
+session_start();
 ?>
 <html>
 <head>
@@ -48,22 +50,7 @@ require_once("config.php");
 							<div class="product-grid__extend">
 								<span class="product-grid__btn product-grid__add-to-cart">
 									<i class="fa fa-cart-arrow-down"></i>
-									<form action="/purchase" method="POST">
-	<!-- Note that the amount is in paise = 50 INR -->
-					<script
-					    src="https://checkout.razorpay.com/v1/checkout.js"
-					    data-key="<?php echo $razor_api_key; ?>"
-					    data-amount="5000"
-					    data-buttontext="Pay with Razorpay"
-					    data-name="Merchant Name"
-					    data-description="Purchase Description"
-					    data-image="https://your-awesome-site.com/your_logo.jpg"
-					    data-prefill.name="Harshil Mathur"
-					    data-prefill.email="support@razorpay.com"
-					    data-theme.color="#F37254"
-					></script>
-					<input type="hidden" value="Hidden Element" name="hidden"></span>
-			</form>
+									<?php include("pay1.php") ?></span>
 							
 							</div>
 						</div>
@@ -75,22 +62,7 @@ require_once("config.php");
 						<span class="product-grid__title">SPRITE</span>
 						<div class="product-grid__extend-wrapper">
 							<div class="product-grid__extend">
-								<span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i><form action="/purchase" method="POST">
-	<!-- Note that the amount is in paise = 50 INR -->
-					<script
-					    src="https://checkout.razorpay.com/v1/checkout.js"
-					    data-key="<?php echo $razor_api_key; ?>"
-					    data-amount="5000"
-					    data-buttontext="Pay with Razorpay"
-					    data-name="Merchant Name"
-					    data-description="Purchase Description"
-					    data-image="https://your-awesome-site.com/your_logo.jpg"
-					    data-prefill.name="Harshil Mathur"
-					    data-prefill.email="support@razorpay.com"
-					    data-theme.color="#F37254"
-					></script>
-					<input type="hidden" value="Hidden Element" name="hidden"></span>
-			</form>
+								<span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i><?php include("pay2.php") ?></span>
 							
 							</div>
 						</div>
@@ -101,123 +73,29 @@ require_once("config.php");
 						<span class="product-grid__title">7UP</span>
 						<div class="product-grid__extend-wrapper">
 							<div class="product-grid__extend">
-								<span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i><form action="/purchase" method="POST">
-	<!-- Note that the amount is in paise = 50 INR -->
-					<script
-					    src="https://checkout.razorpay.com/v1/checkout.js"
-					    data-key="<?php echo $razor_api_key; ?>"
-					    data-amount="5000"
-					    data-buttontext="Pay with Razorpay"
-					    data-name="Merchant Name"
-					    data-description="Purchase Description"
-					    data-image="https://your-awesome-site.com/your_logo.jpg"
-					    data-prefill.name="Harshil Mathur"
-					    data-prefill.email="support@razorpay.com"
-					    data-theme.color="#F37254"
-					></script>
-					<input type="hidden" value="Hidden Element" name="hidden"></span>
-			</form>
+								<span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i><?php include("pay.php") ?></span>
 							
 							</div>
 						</div>
 					</div>
 				</div>
-<div class="product-grid__product-wrapper">
-					<div class="product-grid__product">
-						<span class="product-grid__title">MOUNTAIN DEW</span>
-						<div class="product-grid__extend-wrapper">
-							<div class="product-grid__extend">
-								<span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i><form action="/purchase" method="POST">
-	<!-- Note that the amount is in paise = 50 INR -->
-					<script
-					    src="https://checkout.razorpay.com/v1/checkout.js"
-					    data-key="<?php echo $razor_api_key; ?>"
-					    data-amount="5000"
-					    data-buttontext="Pay with Razorpay"
-					    data-name="Merchant Name"
-					    data-description="Purchase Description"
-					    data-image="https://your-awesome-site.com/your_logo.jpg"
-					    data-prefill.name="Harshil Mathur"
-					    data-prefill.email="support@razorpay.com"
-					    data-theme.color="#F37254"
-					></script>
-					<input type="hidden" value="Hidden Element" name="hidden"></span>
-			</form>
-							
-							</div>
-						</div>
-					</div>
-				</div>
-<div class="product-grid__product-wrapper">
-					<div class="product-grid__product">
-						<span class="product-grid__title">PEPSI</span>
-						<div class="product-grid__extend-wrapper">
-							<div class="product-grid__extend">
-								<span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i><form action="/purchase" method="POST">
-	<!-- Note that the amount is in paise = 50 INR -->
-					<script
-					    src="https://checkout.razorpay.com/v1/checkout.js"
-					    data-key="<?php echo $razor_api_key; ?>"
-					    data-amount="5000"
-					    data-buttontext="Pay with Razorpay"
-					    data-name="Merchant Name"
-					    data-description="Purchase Description"
-					    data-image="https://your-awesome-site.com/your_logo.jpg"
-					    data-prefill.name="Harshil Mathur"
-					    data-prefill.email="support@razorpay.com"
-					    data-theme.color="#F37254"
-					></script>
-					<input type="hidden" value="Hidden Element" name="hidden"></span>
-			</form>
-							
-							</div>
-						</div>
-					</div>
-				</div>
-<div class="product-grid__product-wrapper">
-					<div class="product-grid__product">
-						<span class="product-grid__title">KURKURE</span>
-						<div class="product-grid__extend-wrapper">
-							<div class="product-grid__extend">
-								<span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i><a href="cart.html" style="color:white">BUY</span></a>
-							
-							</div>
-						</div>
-					</div>
-				</div>
+
+<!--removed 3 products-->
+
 <div class="product-grid__product-wrapper">
 					<div class="product-grid__product">
 						<span class="product-grid__title">LAYS</span>
 						<div class="product-grid__extend-wrapper">
 							<div class="product-grid__extend">
-								<span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i><a href="cart.html" style="color:white">BUY</span></a>
+								<span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i><?php include("pay.php") ?></span>
 							
 							</div>
 						</div>
 					</div>
 				</div>
-<div class="product-grid__product-wrapper">
-					<div class="product-grid__product">
-						<span class="product-grid__title">CHEETOS</span>
-						<div class="product-grid__extend-wrapper">
-							<div class="product-grid__extend">
-								<span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i><a href="cart.html" style="color:white">BUY</span></a>
-							
-							</div>
-						</div>
-					</div>
-				</div>
-<div class="product-grid__product-wrapper">
-					<div class="product-grid__product">
-						<span class="product-grid__title">POPCORN</span>
-						<div class="product-grid__extend-wrapper">
-							<div class="product-grid__extend">
-								<span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i><a href="cart.html" style="color:white">BUY</span></a>
-							
-							</div>
-						</div>
-					</div>
-				</div>
+
+<!--removed 2 products-->
+
 			</div>		
 		</div>
 	</div>
