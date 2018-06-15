@@ -10,7 +10,7 @@
                       echo "Not Selected";
                     }
 
-                    $sql="SELECT price FROM product WHERE code=1";
+                    $sql="SELECT price FROM product WHERE code=3";
                     $result = $con-> query($sql);
                     $row = $result->fetch_assoc();
 
@@ -88,4 +88,4 @@ if ($displayCurrency !== 'INR')
 
 $json = json_encode($data);
 
-require("checkout/automatic.php");
+require("checkout/automatic3.php");

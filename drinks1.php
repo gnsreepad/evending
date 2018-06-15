@@ -74,7 +74,7 @@ session_start();
 						<span class="product-grid__title"><?php echo $value3; ?></span>
 						<div class="product-grid__extend-wrapper">
 							<div class="product-grid__extend">
-								<span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i><?php include("pay.php") ?></span>
+								<span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i><?php include("pay3.php") ?></span>
 							
 							</div>
 						</div>
@@ -88,7 +88,7 @@ session_start();
 						<span class="product-grid__title"><?php echo $value4; ?></span>
 						<div class="product-grid__extend-wrapper">
 							<div class="product-grid__extend">
-								<span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i><?php include("pay.php") ?></span>
+								<span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i><?php include("pay4.php") ?></span>
 							
 							</div>
 						</div>
