@@ -58,4 +58,58 @@ if (empty($_POST['razorpay_payment_id']) === false)
                 }*/
         }
         ?>
-        
+<html>
+<head>
+<style type="text/css">
+.nav  
+{	
+	
+	width:100%;
+	height:90px;
+	position:absolute;
+	top:0; left:0; color:white; z-index:7; font-family:verdana; -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+		background-color: #3d5b99;
+}
+.x {
+	
+	width: 30%;
+    margin-right: 0px;
+    margin-left: 400px;
+	margin-top: 300px;
+	padding: 20px;
+	border: 1px solid #102744;
+	background-color: #3d5b99;}
+	
+.profile_info div {
+	display: inline-block; 
+	margin: 0px;margin-top:90px;background:#3d5b99;margin-right: 0px;
+    margin-left: 1275px;
+}
+.profile_info:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+</style>
+</head>		
+<body background="y.jpg">
+	<div class="nav"><h1>VENDX</h1> </div>
+	<div class="profile_info">
+
+			<div>
+				<?php  if (isset($_SESSION['user'])) : ?>
+					<strong style="color: white;"><?php echo $_SESSION['user']['username']; ?></strong>
+
+					<small>
+						<i  style="color: white;">(<?php echo ucfirst($_SESSION['user']['user_type']); ?>)</i> 
+						<br>
+						<a href="index.php?logout='1'" style="color: red;">logout</a>
+					</small>
+
+				<?php endif ?>
+			</div>
+		</div>
+	<div class="x"><strong style="color: white;" "font-size:100%"><?php echo "your promocode is = "; ?><?php echo $checksum_updated; ?></strong></div>
+	
+</body>
+</html>

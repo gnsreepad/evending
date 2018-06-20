@@ -1,8 +1,10 @@
+
 <?php
 require_once("config.php");
 require("select.php");
 require('razorpay-php/Razorpay.php');
 session_start();
+
 ?>
 <html>
 <head>
@@ -17,27 +19,75 @@ session_start();
 				padding: 10px
 
 			}
+body{ background-image: url("y.jpg"); height:750px; }			
+.nav  
+{	
+	
+	width:100%;
+	height:90px;
+	background:#3d5b99;position:absolute;
+	top:0; left:0; color:white; z-index:7; font-family:verdana; -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25); 
+}
+ 
+
+
+.profile_info div {
+	display: inline-block; 
+	margin: 0px;margin-top:90px;background:#3d5b99;margin-right: 0px;
+    margin-left: 1275px;
+}
+.profile_info:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+
+			
+
 		</style>
 </head>
 <body>
-<header>
-	<div class="nav">  
-	  <img src="33.jpg" class="logo">
-	  <ul class="menu">
-	  <li><a href="index.php">HOME</a></li>
-		<li><a href="cart.php"class="btn btn2">ADMIN</a></li>
-	 
-	  </ul>
+	<div class="nav"><h1>VENDX</h1> </div>
+	
+
 	</div>
-</header>
+	<div class="content">
+		<!-- notification message -->
+		<?php if (isset($_SESSION['success'])) : ?>
+			<div class="error success" >
+				<h3>
+					<?php 
+						echo $_SESSION['success']; 
+						unset($_SESSION['success']);
+					?>
+				</h3>
+			</div>
+		<?php endif ?>
+		<!-- logged in user information -->
+		<div class="profile_info">
 
+			<div>
+				<?php  if (isset($_SESSION['user'])) : ?>
+					<strong style="color: white;"><?php echo $_SESSION['user']['username']; ?></strong>
 
-<div class="wrapper">
+					<small>
+						<i  style="color: white;">(<?php echo ucfirst($_SESSION['user']['user_type']); ?>)</i> 
+						<br>
+						<a href="index.php?logout='1'" style="color: red;">logout</a>
+					</small>
+
+				<?php endif ?>
+			</div>
+		</div>
+	</div
+
+<div class="wrapper" background:#3d5b99>
 	<div class="desc">
 		<h1>DRINKS AND SNACKS...</h1>
 	</div>
 
-	<div class="content">
+	
 		<!-- content here -->
 		<div class="product-grid product-grid--flexbox">
 			<div class="product-grid__wrapper">
@@ -96,10 +146,9 @@ session_start();
 				</div>
 
 <!--removed 2 products-->
-
-			</div>		
-		</div>
-	</div>
+			</div>
+		</div>	
+	
 </div>
 </body>
 </html>

@@ -1,0 +1,100 @@
+body{ background-image: url("y.jpg"); height:750px; }
+
+.fb-header-base{ width:100%; height:90px; position:absolute; top:0; left:0; color:white; z-index:7; font-family:verdana; -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25); }
+
+.fb-header{ width:100%; height:90px; position:absolute; top:0; left:0; color:white; z-index:7; font-family:verdana; }
+#img1{ left:50px; height:60px; width:100px; top:0px; font-size:27px; } 
+.fb-body{ position:absolute; left:0px; top:90px; width:100%; height:645px; }
+#img2{ top:130px; left:178px; width:537px; height:195px; }
+
+form, /*.content1*/ {
+	
+	width: 30%;
+    margin-right: 0px;
+    margin-left: 915px;
+	padding: 20px;
+	border: 1px solid #102744;
+	background-color: #eee;
+	
+}
+.input-group {
+	margin: 10px 0px 10px 0px;
+}
+.input-group label {
+	display: block;
+	text-align: left;
+	margin: 3px;
+}
+.input-group input {
+	height: 30px;
+	width: 30%;
+	padding: 5px 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px solid gray;
+}
+#user_type {
+	height: 40px;
+	width: 31.8%;
+	padding: 5px 10px;
+	background: white;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px solid gray;
+}
+.btn {
+	padding: 10px;
+	font-size: 15px;
+	color: white;
+	background: #102744;
+	border: none;
+	border-radius: 5px;
+}
+.error {
+	width: 92%; 
+	margin: 0px auto; 
+	padding: 10px; 
+	border: 1px solid #a94442; 
+	color: #a94442; 
+	background: #f2dede; 
+	border-radius: 5px; 
+	text-align: left;
+}
+.success {
+	color: #3c763d; 
+	background: #dff0d8; 
+	border: 1px solid #3c763d;
+	margin-bottom: 20px;
+}
+.profile_info img {
+	display: inline-block; 
+	width: 50px; 
+	height: 50px; 
+	margin: 5px;
+	float: left;
+}
+.profile_info div {
+	display: inline-block; 
+	margin: 0px;margin-top:90px;background:#3d5b99;margin-right: 0px;
+    margin-left: 1215px;
+}
+.profile_info:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+
+
+
+.vertical-menu a.active {
+    background-color: #4CAF50; /* Add a green color to the "active/current" link */
+    color: white;
+}
+.nav  
+{	
+	width:100%;
+	height:90px;
+	background:#3d5b99;position:absolute;
+	top:0; left:0; color:white; z-index:7; font-family:verdana; -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25); 
+}

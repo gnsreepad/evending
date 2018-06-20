@@ -1,7 +1,6 @@
 
 header
-{
-	background-color:#CFDFE6;
+{    background-image: url("y.jpg");
 	background-repeat:no-repeat;
 	height: 100vh;
 	background-size: 100% 100%;
@@ -9,7 +8,8 @@ header
 }
 
 .body
-{ background-color:#CFDFE6;
+{  background-image:y.jpg;
+background-color:#CFDFE6;
 }
 
 .nav  
@@ -58,7 +58,7 @@ header
 }
 .msg h1
 {
-	font-size: 52px;
+	font-size: 40px;
 	margin: 25px;
 	color: #FFF;
 }
@@ -67,8 +67,8 @@ header
 	font-size: 40px;
 	color: #FFF;
 	letter-spacing: 2px;
-	padding: 7px 28px;
-	margin:20px;
+	padding: 7px 7px;
+	margin:10px;
 	text-decoration:none;
 	background: rgba(0,0,100,.5);
 }
@@ -77,6 +77,7 @@ header
 	background-color:#CFDFE6;
 	color: #fff;
 }
+
 .btn2:hover
 {
 	background-color:#CFDFE6;
