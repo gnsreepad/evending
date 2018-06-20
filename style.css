@@ -76,18 +76,18 @@ form, /*.content1*/ {
 .profile_info div {
 	display: inline-block; 
 	margin: 0px;margin-top:90px;background:#3d5b99;margin-right: 0px;
-    margin-left: 1215px;
+    margin-left: 1215px;height:100%;width:60% padding: 14px 40px;
 }
 .profile_info:after {
 	content: "";
 	display: block;
-	clear: both;
+	clear: both;display:block;height:100%;width:30%
 }
 
 
 
 
-.vertical-menu a.active {
+.vertical-menu a {
     background-color: #4CAF50; /* Add a green color to the "active/current" link */
     color: white;
 }

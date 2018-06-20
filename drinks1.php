@@ -9,6 +9,7 @@ session_start();
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="drinks1.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="viewport" content="width=device-width">
 		<style type="text/css">
 			.razorpay-payment-button{
@@ -19,6 +20,11 @@ session_start();
 				padding: 10px
 
 			}
+			@media screen and (max-width:400px) {
+  .nav,.content,.wrapper,.profile_info,.product-grid__wrapper,.product-grid__product{
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
 body{ background-image: url("y.jpg"); height:750px; }			
 .nav  
 {	

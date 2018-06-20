@@ -2,8 +2,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>VENDX</title>
 	<link rel="stylesheet" href="style1.css">
+	<style type="text/css">
+	@media screen and (max-width:640px) {
+  .fb-header-base, .fb-header, .fb-body,#form1,#form2,#img1,#form3,#mailbox,#img2,.submit1  {
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+	</style>
 </head>
 <body>
 <form method="post" action="login.php">
@@ -18,16 +26,15 @@
 				<label>Password</label><br>
 				<input type="password" name="password"><br>
 			</div>
-			<div class="submit1">
+			<div  class="submit1">
 				<button type="submit" name="login_btn">Login</button>
 			</div>
 			<div id="img1" class="fb-header">
-			<h2>VENDX</h2></div>
+			<h2>VENDX</h2>
 		</div>
-	</div>
-</form>
-	
-<form method="post" action="login.php">
+
+</form>	
+<form method="post" action="login.php">	
 	<div class="fb-body">
 		<div class="fb-body" id="img2">
 		<img src="x.jpg"/>
