@@ -69,13 +69,13 @@ if (!isLoggedIn()) {
 	<a href="drinks1.php"style="color: white;display:block;height:100%;width:50%">VENDING MACHINE 1</a><br/>
 </div>
 <div class="vertical-menu">
-	<a href="drinks1.php"style="color: white;display:block;height:100%;width:50%">VENDING MACHINE 2</a><br/>
+	<a href="drinks2.php"style="color: white;display:block;height:100%;width:50%">VENDING MACHINE 2</a><br/>
 </div>
 <div class="vertical-menu">
-	<a href="drinks1.php"style="color: white;display:block;height:100%;width:50%">VENDING MACHINE 3</a><br/>
+	<a href="drinks3.php"style="color: white;display:block;height:100%;width:50%">VENDING MACHINE 3</a><br/>
 </div>
 <div class="vertical-menu">
-	<a href="drinks1.php"style="color: white;display:block;height:100%;width:50%">VENDING MACHINE 4</a><br/>
+	<a href="drinks4.php"style="color: white;display:block;height:100%;width:50%">VENDING MACHINE 4</a><br/>
 </div>
 </body>
 </html>
