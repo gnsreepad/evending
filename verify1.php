@@ -52,6 +52,17 @@ if (empty($_POST['razorpay_payment_id']) === false)
                 echo "your promocode is = ";
                 echo $checksum_updated;
 
+                /*updating the checsum table*/
+                $sqli="INSERT INTO checksum(checksum) VALUES ('$checksum_updated')";
+
+				if( !mysqli_query($con,$sqli) )
+				{
+					echo 'no value inserted';
+				}
+
+				
+
+
                /* else
                 {
                     echo 'updated values';
