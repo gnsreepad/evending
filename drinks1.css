@@ -127,7 +127,7 @@ body {
 }
 .product-grid__product {
     background: rgba(0,0,100,.5);
-  padding: 1rem;
+  padding: 20px;
   position: relative;
   cursor: pointer;
   background: #fff;

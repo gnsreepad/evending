@@ -11,22 +11,22 @@
                       echo "Not Selected";
                     }
 
-                    $sql="SELECT name FROM product WHERE code=1 AND vend=1";
+                    $sql="SELECT name FROM product WHERE code=13 AND vend=4";
                     $result = $con-> query($sql);
                     $row = $result->fetch_assoc();
                     $value1=$row['name'];
 
-                    $sql="SELECT name FROM product WHERE code=2 AND vend=1";
+                    $sql="SELECT name FROM product WHERE code=14 AND vend=4";
                     $result = $con-> query($sql);
                     $row = $result->fetch_assoc();
                     $value2=$row['name'];
 
-                    $sql="SELECT name FROM product WHERE code=3 AND vend=1";
+                    $sql="SELECT name FROM product WHERE code=15 AND vend=4";
                     $result = $con-> query($sql);
                     $row = $result->fetch_assoc();
                     $value3=$row['name'];
 
-                    $sql="SELECT name FROM product WHERE code=4 AND vend=1";
+                    $sql="SELECT name FROM product WHERE code=16 AND vend=4";
                     $result = $con-> query($sql);
                     $row = $result->fetch_assoc();
                     $value4=$row['name'];

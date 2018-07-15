@@ -1,5 +1,9 @@
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style type="text/css">
+@media screen and (max-width:640px) {
+  #x{margin-left:120px;}
+}
 .nav  
 {	width:100%;
 	height:90px;
@@ -47,7 +51,7 @@ if (isset($_POST["search"]))
 								echo "<div style=\"text-align:center\">";
 								echo "<br/>";echo "<br/>";echo "<br/>";echo "<br/>";echo "<br/>";echo "<br/>";echo "<br/>";
 								echo "<br/>";echo "<br/>";echo "<br/>";echo "<br/>";echo "<br/>";echo "<br/>";echo "<br/>";
-								echo 'AVAILABLE IN '; echo '<h1><a href="drinks1.php" style="color: black;">VENDING MACHINE 1</a></h1>';
+								echo '<h4 id="x"> AVAILABLE IN </h4>'; echo '<h1 id="x"><a href="drinks1.php" style="color: black;">VENDING MACHINE 1</a></h1>';
 								echo "</div>";
 							}
 						else if ($row['vend'] == 2)

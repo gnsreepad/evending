@@ -10,7 +10,7 @@ $con = mysqli_connect('127.0.0.1','root','');
                       echo "Not Selected";
                     }
 
-                    $sql="SELECT count,checksum FROM product WHERE code=1";
+                    $sql="SELECT count,checksum FROM product WHERE code=6";
                     $result = $con-> query($sql);
                     $row = $result->fetch_assoc();
                     
@@ -42,7 +42,7 @@ if (empty($_POST['razorpay_payment_id']) === false)
                 $checksum_updated=$checksum_updated*$checksum_updated;
                 
 
-                $sl="UPDATE product SET count='$updated_count',checksum='$checksum_updated' WHERE code='1'";
+                $sl="UPDATE product SET count='$updated_count',checksum='$checksum_updated' WHERE code='6'";
 
               if( !mysqli_query($con,$sl) )
                 {
@@ -115,7 +115,7 @@ if (empty($_POST['razorpay_payment_id']) === false)
 				<?php endif ?>
 			</div>
 		</div>
-	<div class="x" id="p"><strong style="color: white;" "font-size:100%"><?php echo "your promocode is = "; ?><?php echo $checksum_updated; ?></strong></div>
+	<div class="x"  id="p"><strong style="color: white;" "font-size:100%"><?php echo "your promocode is = "; ?><?php echo $checksum_updated; ?></strong></div>
 	
 </body>
 </html>

@@ -7,17 +7,32 @@
 	<link rel="stylesheet" href="style1.css">
 	<style type="text/css">
 	@media screen and (max-width:640px) {
-  .fb-header-base, .fb-header, .fb-body,#form1,#form2,#img1,#form3,#mailbox,#img2,.submit1  {
-    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+  .fb-header-base, .fb-header  {
+    width:100%;
+	height:250px;/* The width is 100%, when the viewport is 800px or smaller */
   }
+
+  #form1{ width:180px; top:100px;left:50px;}
+  #form2{width:250px; top:170px;left:50px;}
+  .submit1{ left:230px; top:185px;}
+  #img2{ left:0px;top:260px;}
+  #mailbox{ width:208px;left:300px;}
+  .fb-body{ left:0px;}
+  #form3{ top:260px;left:350px;color:white;}
+  #nav  
+{	
+	width:1400px;
+	
+}
+}
 }
 	</style>
 </head>
 <body>
 <form method="post" action="login.php">
 	<?php echo display_error(); ?>
-	<div class = "fb-header-base" ></div>
-		<div class = "fb-header">
+	<div class = "fb-header-base" id= "nav"></div>
+		<div class = "fb-header" id= "nav">
 			<div id="form1" class="fb-header">
 				<label>Username</label><br>
 				<input type="text" name="username"><br>
@@ -40,14 +55,14 @@
 		<img src="x.jpg"/>
 		</div>
 		<div class="fb-body" id="form3">
-			<label>Username</label>
-			<input type="text" name="username" id ="mailbox" value="<?php echo $username; ?>">
-			<label>Email</label>
-			<input type="email" name="email" id ="mailbox" value="<?php echo $email; ?>">
-			<label>password</label>
-			<input type="password" name="password_1" id ="mailbox" >
-			<label>Confirm password</label>
-			<input type="password" name="password_2" id ="mailbox" >
+			<label>Username</label><br/>
+			<input type="text" name="username" id ="mailbox" value="<?php echo $username; ?>"><br/>
+			<label>Email</label><br/>
+			<input type="email" name="email" id ="mailbox" value="<?php echo $email; ?>"><br/>
+			<label>Password</label><br/>
+			<input type="password" name="password_1" id ="mailbox" ><br/>
+			<label>Confirm Password</label><br/>
+			<input type="password" name="password_2" id ="mailbox" ><br/><br/>
 			<button type="submit" class="btn" name="register_btn">Register</button>
 		</div>
 	</div>

@@ -16,7 +16,7 @@ $price=$_POST['price'];
 $count=$_POST['count'];
 $checksum=$_POST['checksum'];
 
-$sql="INSERT INTO product(code,name,price,count,checksum,vend) VALUES ('$code','$name','$price','$count','$checksum','1')";
+$sql="INSERT INTO product(code,name,price,count,checksum,vend) VALUES ('$code','$name','$price','$count','$checksum','4')";
 
 if( !mysqli_query($con,$sql) )
 {

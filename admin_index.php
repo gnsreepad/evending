@@ -13,14 +13,13 @@ if (!isLoggedIn()) {
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style type="text/css">
-	@media screen and (max-width:640px) {
-   .vertical-menu {
-    width:50%;
-	margin-left:50px;/* The width is 100%, when the viewport is 800px or smaller */
-  }
-  #srch1{margin-left:120px}
-  #out{margin-left:520px}
+@media screen and (max-width:640px) {
+  #out{margin-left:520px;}
+  //#p{margin-left:2px; width:15%;}
+  
+  
 }
+.nav{width:1400px;}
 	.vertical-menu a {
     color: hotpink; background-color: #3d5b99;
 	 padding: 14px 40px;
@@ -33,16 +32,6 @@ if (!isLoggedIn()) {
 .vertical-menu a:hover{
 	background-image:url(y.jpg)
 	
-}
-.srch{   margin:0px; margin-left:450px;
-    
-}
-.nav  
-{	
-	width:1400px;
-	height:90px;
-	background:#3d5b99;position:absolute;
-	top:0; left:0; color:white; z-index:7; font-family:verdana; -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25); 
 }
 	</style>
 </head>
@@ -78,24 +67,17 @@ if (!isLoggedIn()) {
 			</div>
 		</div>
 	</div>
-<div class="srch" id="srch1">
-<form action="search.php" method="post">
-    <input type="search" id="srch1" name="search" placeholder="Search for your Choice">
-    <input type="submit" id="srch1" value="Search">
-</form>
-</div>
-<br/><br/><br/>	
 <div class="vertical-menu">
-	<a href="drinks1.php"style="color: white;display:block;height:100%;width:50%">VENDING MACHINE 1</a><br/><br/>
+	<a href="home.php"style="color: white;display:block;height:100%;width:50%">VENDING MACHINE 1</a><br/>
 </div>
 <div class="vertical-menu">
-	<a href="drinks2.php"style="color: white;display:block;height:100%;width:50%">VENDING MACHINE 2</a><br/><br/>
+	<a href="home2.php"style="color: white;display:block;height:100%;width:50%">VENDING MACHINE 2</a><br/>
 </div>
 <div class="vertical-menu">
-	<a href="drinks3.php"style="color: white;display:block;height:100%;width:50%">VENDING MACHINE 3</a><br/><br/>
+	<a href="home3.php"style="color: white;display:block;height:100%;width:50%">VENDING MACHINE 3</a><br/>
 </div>
 <div class="vertical-menu">
-	<a href="drinks4.php"style="color: white;display:block;height:100%;width:50%">VENDING MACHINE 4</a><br/><br/>
+	<a href="home4.php"style="color: white;display:block;height:100%;width:50%">VENDING MACHINE 4</a><br/>
 </div>
 </body>
 </html>

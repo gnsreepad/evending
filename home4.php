@@ -15,7 +15,7 @@ if (isset($_GET['logout'])) {
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Home</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<style>
@@ -24,7 +24,6 @@ if (isset($_GET['logout'])) {
  // #p{margin-left:2px; width:15%;}
   
 }
-.nav{width:1400px;}
 	.header {
 		background: #003366;
 	}
@@ -52,7 +51,7 @@ if (isset($_GET['logout'])) {
 		<?php endif ?>
 
 		<!-- logged in user information -->
-		<div class="profile_info"  >
+		<div class="profile_info">
 			
 
 			<div id="out">
@@ -71,8 +70,7 @@ if (isset($_GET['logout'])) {
 		</div>
 		
 	</div>
-	
-				<div class="wrapper">
+	<div class="wrapper">
 					<form action="insert.php" method="post">
 						Code: </br><input type="text" name="code">
 							</br>

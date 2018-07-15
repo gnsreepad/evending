@@ -1,7 +1,7 @@
 
 <?php
 require_once("config.php");
-require("select.php");
+require("select4.php");
 require('razorpay-php/Razorpay.php');
 session_start();
 
@@ -12,7 +12,6 @@ session_start();
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<style type="text/css">
-		body{ background-image: url("y.jpg"); height:750px; }	
 			.razorpay-payment-button{
 				color: #ffffff;
 				background-color:#7266ba;
@@ -21,18 +20,18 @@ session_start();
 				padding: 10px
 
 			}
-@media screen and (max-width:640px) {
+			@media screen and (max-width:640px) {
   #out{margin-left:520px;}
   #p{margin-left:2px; width:15%;}
   
 }
-		
+body{ background-image: url("y.jpg"); height:750px; }			
 .nav  
 {	
 	
-	width:1400px;
+	width:100%;
 	height:90px;
-	background:#3d5b99;
+	background:#3d5b99;position:absolute;
 	top:0; left:0; color:white; z-index:7; font-family:verdana; -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25); 
 }
  
@@ -55,7 +54,7 @@ session_start();
 		</style>
 </head>
 <body>
-	<div class="nav" ><h1>VENDX</h1> </div>
+	<div class="nav"><h1>VENDX</h1> </div>
 	
 
 	</div>
@@ -101,39 +100,37 @@ session_start();
 				<!-- Product list start here -->
 
 				<!-- Single product -->
-				<div class="product-grid__product-wrapper"id="p" >
-					<div class="product-grid__product" >
+				<div class="product-grid__product-wrapper" id="p">
+					<div class="product-grid__product">
 						<span class="product-grid__title"><?php echo $value1; ?></span>
 						<div class="product-grid__extend-wrapper">
 							<div class="product-grid__extend">
 								<span class="product-grid__btn product-grid__add-to-cart">
 									<i class="fa fa-cart-arrow-down"></i>
-									<?php include("pay1.php") ?></span>
+									<?php include("pay13.php") ?></span>
 							
 							</div>
 						</div>
 					</div>
 				</div>
-				
 				<!-- end Single product -->
 				<div class="product-grid__product-wrapper" id="p">
-					<div class="product-grid__product" >
+					<div class="product-grid__product">
 						<span class="product-grid__title"><?php echo $value2; ?></span>
 						<div class="product-grid__extend-wrapper">
 							<div class="product-grid__extend">
-								<span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i><?php include("pay2.php") ?></span>
+								<span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i><?php include("pay14.php") ?></span>
 							
 							</div>
 						</div>
 					</div>
 				</div>
-				
 				<div class="product-grid__product-wrapper" id="p">
-					<div class="product-grid__product" >
+					<div class="product-grid__product">
 						<span class="product-grid__title"><?php echo $value3; ?></span>
 						<div class="product-grid__extend-wrapper">
 							<div class="product-grid__extend">
-								<span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i><?php include("pay3.php") ?></span>
+								<span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i><?php include("pay15.php") ?></span>
 							
 							</div>
 						</div>
@@ -143,11 +140,11 @@ session_start();
 <!--removed 3 products-->
 
 <div class="product-grid__product-wrapper" id="p">
-					<div class="product-grid__product" >
+					<div class="product-grid__product">
 						<span class="product-grid__title"><?php echo $value4; ?></span>
 						<div class="product-grid__extend-wrapper">
 							<div class="product-grid__extend">
-								<span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i><?php include("pay4.php") ?></span>
+								<span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i><?php include("pay16.php") ?></span>
 							
 							</div>
 						</div>
