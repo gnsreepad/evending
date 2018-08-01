@@ -10,7 +10,7 @@ session_start();
 <head>
 <link rel="stylesheet" type="text/css" href="drinks1.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="viewport" content="width=device-width">
+
 		<style type="text/css">
 			.razorpay-payment-button{
 				color: #ffffff;
@@ -20,10 +20,10 @@ session_start();
 				padding: 10px
 
 			}
-			@media screen and (max-width:400px) {
-  .nav,.content,.wrapper,.profile_info,.product-grid__wrapper,.product-grid__product{
-    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
-  }
+			@media screen and (max-width:640px) {
+  #out{margin-left:520px;}
+  #p{margin-left:2px; width:15%;}
+  
 }
 body{ background-image: url("y.jpg"); height:750px; }			
 .nav  
@@ -73,7 +73,7 @@ body{ background-image: url("y.jpg"); height:750px; }
 		<!-- logged in user information -->
 		<div class="profile_info">
 
-			<div>
+			<div id="out">
 				<?php  if (isset($_SESSION['user'])) : ?>
 					<strong style="color: white;"><?php echo $_SESSION['user']['username']; ?></strong>
 
@@ -100,7 +100,7 @@ body{ background-image: url("y.jpg"); height:750px; }
 				<!-- Product list start here -->
 
 				<!-- Single product -->
-				<div class="product-grid__product-wrapper">
+				<div class="product-grid__product-wrapper" id="p">
 					<div class="product-grid__product">
 						<span class="product-grid__title"><?php echo $value1; ?></span>
 						<div class="product-grid__extend-wrapper">
@@ -114,7 +114,7 @@ body{ background-image: url("y.jpg"); height:750px; }
 					</div>
 				</div>
 				<!-- end Single product -->
-				<div class="product-grid__product-wrapper">
+				<div class="product-grid__product-wrapper" id="p">
 					<div class="product-grid__product">
 						<span class="product-grid__title"><?php echo $value2; ?></span>
 						<div class="product-grid__extend-wrapper">
@@ -125,7 +125,7 @@ body{ background-image: url("y.jpg"); height:750px; }
 						</div>
 					</div>
 				</div>
-				<div class="product-grid__product-wrapper">
+				<div class="product-grid__product-wrapper" id="p">
 					<div class="product-grid__product">
 						<span class="product-grid__title"><?php echo $value3; ?></span>
 						<div class="product-grid__extend-wrapper">
@@ -139,7 +139,7 @@ body{ background-image: url("y.jpg"); height:750px; }
 
 <!--removed 3 products-->
 
-<div class="product-grid__product-wrapper">
+<div class="product-grid__product-wrapper" id="p">
 					<div class="product-grid__product">
 						<span class="product-grid__title"><?php echo $value4; ?></span>
 						<div class="product-grid__extend-wrapper">

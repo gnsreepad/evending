@@ -14,10 +14,12 @@ if (!isLoggedIn()) {
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style type="text/css">
 @media screen and (max-width:640px) {
-  .vertical-menu,.nav,.content {
-    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
-  }
+  #out{margin-left:520px;}
+  //#p{margin-left:2px; width:15%;}
+  
+  
 }
+.nav{width:1400px;}
 	.vertical-menu a {
     color: hotpink; background-color: #3d5b99;
 	 padding: 14px 40px;
@@ -51,7 +53,7 @@ if (!isLoggedIn()) {
 		<div class="profile_info">
 			
 
-			<div>
+			<div id="out">
 				<?php  if (isset($_SESSION['user'])) : ?>
 					<strong style="color: white;"><?php echo $_SESSION['user']['username']; ?></strong>
 

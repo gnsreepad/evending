@@ -15,9 +15,16 @@ if (isset($_GET['logout'])) {
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Home</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<style>
+	@media screen and (max-width:640px) {
+  #out{margin-left:520px;}
+ // #p{margin-left:2px; width:15%;}
+  
+}
+.nav{width:1400px;}
 	.header {
 		background: #003366;
 	}
@@ -45,10 +52,10 @@ if (isset($_GET['logout'])) {
 		<?php endif ?>
 
 		<!-- logged in user information -->
-		<div class="profile_info">
+		<div class="profile_info"  >
 			
 
-			<div>
+			<div id="out">
 				<?php  if (isset($_SESSION['user'])) : ?>
 					<strong style="color: white;;"><?php echo $_SESSION['user']['username']; ?></strong>
 
@@ -67,21 +74,22 @@ if (isset($_GET['logout'])) {
 	
 				<div class="wrapper">
 					<form action="insert.php" method="post">
-						Code: <input type="text" name="code">
+						Code: </br><input type="text" name="code">
 							</br>
 							</br>
-						Name: <input type="text" name="name">     
+						Name: </br><input type="text" name="name">     
 							</br>
 							</br>
-						Price: <input type="text" name="price">   
+						Price:</br> <input type="text" name="price">   
 							</br>
 							</br>
-						Count:<input type="number" name="count">
+						Count:</br><input type="number" name="count">
 							</br>
 							</br>
-						Checksum:<input type="number" name="checksum">
+						Checksum:</br><input type="number" name="checksum">
 						</br>
 						</br>
+						
 					<input type="submit" value="Insert">    
 
 					</form>

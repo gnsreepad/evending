@@ -52,26 +52,29 @@ if (empty($_POST['razorpay_payment_id']) === false)
                 echo "your promocode is = ";
                 echo $checksum_updated;
 
-                /*updating the checsum table*/
-                $sqli="INSERT INTO checksum(checksum) VALUES ('$checksum_updated')";
-
-				if( !mysqli_query($con,$sqli) )
-				{
-					echo 'no value inserted';
-				}
-
-				
-
-
                /* else
                 {
                     echo 'updated values';
                 }*/
         }
+
+        $slp="INSERT INTO checksum(checksum) VALUES ('$checksum_updated')";
+        if( !mysqli_query($con,$slp) )
+                {
+                    echo 'no value updated';
+                }
+
+
         ?>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style type="text/css">
+@media screen and (max-width:640px) {
+  #out{margin-left:520px;}
+  #p{margin-left:200px; width:35%;}
+  
+}
 .nav  
 {	
 	
@@ -107,7 +110,7 @@ if (empty($_POST['razorpay_payment_id']) === false)
 	<div class="nav"><h1>VENDX</h1> </div>
 	<div class="profile_info">
 
-			<div>
+			<div id="out">
 				<?php  if (isset($_SESSION['user'])) : ?>
 					<strong style="color: white;"><?php echo $_SESSION['user']['username']; ?></strong>
 
@@ -120,7 +123,7 @@ if (empty($_POST['razorpay_payment_id']) === false)
 				<?php endif ?>
 			</div>
 		</div>
-	<div class="x"><strong style="color: white;" "font-size:100%"><?php echo "your promocode is = "; ?><?php echo $checksum_updated; ?></strong></div>
+	<div class="x" id="p"><strong style="color: white;" "font-size:100%"><?php echo "your promocode is = "; ?><?php echo $checksum_updated; ?></strong></div>
 	
 </body>
 </html>
